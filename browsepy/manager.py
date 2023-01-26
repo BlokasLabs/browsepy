@@ -13,7 +13,7 @@ from werkzeug.utils import cached_property
 from . import mimetype
 from . import compat
 from .compat import deprecated, usedoc
-
+    
 
 def defaultsnamedtuple(name, fields, defaults=None):
     '''
