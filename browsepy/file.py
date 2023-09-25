@@ -274,12 +274,11 @@ class Node(object):
                 return "Amplifier Profile"
 
         # Plugin Resources
-        if parentdir == "Aida DSP Models" and extension == "json":
+        if parentdir == "Aida DSP Models" and extension in ("aidax", "json"):
             return "Aida DSP Model"
         
-        # Plugin Resources
         if parentdir == "NAM Models" and extension == "nam":
-            return "Neural Model"
+            return "NAM Model"
 
         # If this is reached, a file is placed in a directory not fit for it
         # We can still return a recognizable type, but add "Unlisted" suffix
